@@ -22,7 +22,8 @@ fetch("https://jsonplaceholder.typicode.com/users")
       const header = card.querySelector("[data-header]")
       const body = card.querySelector("[data-body]")
       header.textContent = user.name
+      body.textContent = user.email
       userCardContainer.append(card)
-      return { name: user.name, element: card }
+      return { name: user.name, email: user.email, element: card }
     })
   })
