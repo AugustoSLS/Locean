@@ -1,0 +1,77 @@
+.cursos {
+    display: grid;
+    gap: 1rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.cursos-square {
+    display: grid;
+    justify-self: center;
+    gap: 2rem;
+    grid-auto-flow: column;
+    width: fit-content;
+}
+
+.csquare {
+    width: 200px;
+    height: 200px;
+    background-color: #333333;
+    position: relative;
+    border: 3px solid #009578;
+}
+
+.csquare img {
+    position: relative;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#infossq {
+    position: absolute;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;    
+}
+
+#infossq h1 {
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    top: 0px;
+    line-height: 0%;
+}
+
+#infossq h2 {
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 0%;
+    bottom: 0px;
+    padding: 5px 0 0 2px ;
+}
+
+.csquare a {
+    display: flex;
+    color: #333;
+    gap: .15rem;  
+    font-size: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+@media screen and (max-width: 1600px) {
+    .cursos-square {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <script src="../js/ham.js"></script>
+    <title>Perfil</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div id="logo_loceantext">
+            <a href="/">
+            <img id="logo__locean--text" src="../Imagens/Teste123.jpg">
+            </a>
+        </div>
+ 
+    </header>
+
+    <nav class="nav">
+        <div class="nav__links">
+            <a href="/" class="nav__link">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="nav__link" href="/cursos">
+                <i class="material-icons">article</i>
+                Cursos
+            </a>
+            <a class="nav__link nav__link--active" href="/perfil">
+                <i class="material-icons">person</i>
+                Perfil
+            </a>
+            <a class="nav__link" href="/login">
+                <i class="material-icons">login</i>
+                Login
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+
+<main>
+
+    <section class="sec__perf__user">
+        <div class="perf__user__header">
+            <div class="perf__user__xesq">
+                <div class="perf__user__avatar">
+                    <img src="../Imagens/423432.png" alt="img-avatar">
+                    <a href="/configperf">
+                    <button type="button" class="botão-avatar">
+                        <i class="material-icons">image</i>
+                    </button>
+                    </a>
+                </div>
+                <img src="../Imagens/Slide-3.jpg" alt="xesq-img">
+                <a href="/configperf">
+                <button type="button" class="botão-xesq">
+                    <i class="material-icons">collections</i> 
+                    <span id="papel__parede">Papel de Parede</span>  
+                </button>
+                </a>
+            </div>
+        </div>
+        <div class="perf__user__body">
+            <div class="perf__user__bio">
+                <a href="/configperf">
+                <button type="button" class="botão-bio">
+                    <i class="material-icons">edit</i>
+                </button>
+                </a>
+                <h4 class="dataN">Data de Entrada</h4>
+                <h3 class="titulo">Nome de Usuário</h3>
+                <p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+</body>
+</html>
