@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="js/slider.js"></script>
+    <script src="js/ham.js"></script>
+    <title>Locean.</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div id="logo_loceantext">
+            <a href="index.html">
+            <img id="logo__locean--text" src="./Imagens/Teste123.jpg">
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__links">            
+            <a href="index.html" class="nav__link">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="nav__link" href="cursos.html">
+                <i class="material-icons">article</i>
+                Cursos
+            </a>
+            <a class="nav__link" href="perfil.html">
+                <i class="material-icons">person</i>
+                Perfil
+            </a>
+            <a class="nav__link" href="login.html">
+                <i class="material-icons">login</i>
+                Login
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+
+    <section id="wrapper">
+        <div class="videoContainer">
+        <video id="myVideo" controls preload="auto" poster="" width="380" >
+          <source src="./Imagens/v4.mp4" type="video/mp4"/>
+              <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="control">
+                <div class="btmControl">
+                    <div class="btnPlay btn" title="Play/Pause video"><span class="icon-play"></span></div>
+                    <div class="progress-bar">
+                        <div class="progress">
+                            <span class="bufferBar"></span>
+                            <span class="timeBar"></span>
+                        </div>
+                    </div>
+                    <!--<div class="volume" title="Set volume">
+                        <span class="volumeBar"></span>
+                    </div>-->
+                    <div class="sound sound2 btn" title="Mute/Unmute sound"><span class="icon-sound"></span></div>
+                    <div class="btnFS btn" title="Switch to full screen"><span class="icon-fullscreen"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="infos">
+        <div class="infos__vid">
+            <div id="vidinfo">
+                <div id="vidname">
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                    <div id=visvid>
+                        <span>Lorem ipsum dolor sit amet</span>
+                        <span id="cvisvid"></span>
+                        <span>Lorem ipsum dolor sit amet</span>
+                    </div>
+                </div>
+                <div class="viddisc">
+                    <div class="disc">
+                        <span id="discimg">
+                        <img src="./Imagens/CarouselT3.jpg" alt="channel image">
+                    </span>
+                        <h1>Nome Canal</h1>
+                    </div>
+                    <div class="discription">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="coment">
+        <div class="comments-app" ng-app="commentsApp" ng-controller="CommentsController as cmntCtrl">
+            <!-- From -->
+            <div class="comment-form">
+              <!-- Comment Avatar -->
+              <div class="comment-avatar">
+                <img src="/Imagens/423432.png">
+              </div>
+          
+              <form class="form" name="form" ng-submit="form.$valid && cmntCtrl.addComment()" novalidate>
+                <div class="form-row">
+                  <textarea
+                            class="input"
+                            ng-model="cmntCtrl.comment.text"
+                            placeholder="Add comment..."
+                            required></textarea>
+                </div>
+          
+                <div class="form-row">
+                  <input type="submit" value="Add Comment">
+                </div>
+              </form>
+            </div>
+          
+            <!-- Comments List -->
+            <div class="comments">
+              <!-- Comment -->
+              <div class="comment" ng-repeat="comment in cmntCtrl.comments | orderBy: '-date'">
+                <!-- Comment Avatar -->
+                <div class="comment-avatar">
+                  <img src="/Imagens/423432.png">
+                </div>
+          
+                <!-- Comment Box -->
+                <div class="comment-box">
+                  <div class="comment-text">{{ comment.text }}</div>
+                  <div class="comment-footer">
+                    <div class="comment-info">
+                      <span class="comment-author">
+                        <a ng-if="!comment.anonymous" href="{{ comment.author }}">{{ comment.author }}</a>
+                      </span>
+                      <span class="comment-date">{{ comment.date | date: 'medium' }}</span>
+                    </div>
+          
+                    <div class="comment-actions">
+                      <a href="#">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Comment - Dummy -->
+              <div class="comment">
+                <!-- Comment Avatar -->
+                <div class="comment-avatar">
+                  <img src="/Imagens/423432.png">
+                </div>
+          
+                <!-- Comment Box -->
+                <div class="comment-box">
+                  <div class="comment-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto temporibus iste nostrum dolorem natus recusandae incidunt voluptatum.</div>
+                  <div class="comment-footer">
+                    <div class="comment-info">
+                      <span class="comment-author">
+                        <a href="">Gustavo</a>
+                      </span>
+                      <span class="comment-date">Feb 2, 2013 11:32:04 PM</span>
+                    </div>
+          
+                    <div class="comment-actions">
+                      <a href="#">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Comment - Dummy -->
+              <div class="comment">
+                <!-- Comment Avatar -->
+                <div class="comment-avatar">
+                  <img src="/Imagens/423432.png">
+                </div>
+          
+                <!-- Comment Box -->
+                <div class="comment-box">
+                  <div class="comment-text">Eligendi voluptatum ducimus architecto tempore, quaerat explicabo veniam fuga corporis totam reprehenderit quasi sapiente modi tempora at perspiciatis mollitia, dolores voluptate. Cumque, corrupti?</div>
+                  <div class="comment-footer">
+                    <div class="comment-info">
+                      <span class="comment-author">
+                        <a href="">Augusto</a>
+                      </span>
+                      <span class="comment-date">Jan 31, 1986 11:32:04 PM</span>
+                    </div>
+          
+                    <div class="comment-actions">
+                      <a href="#">Reply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <a href="contato.html"><i class="material-icons">email</i>
+            Contato</a>
+            <a href="termos.html"><i class="material-icons">description</i>
+            Termos de Serviço</a>
+            <a href="segurança.html"><i class="material-icons">shield</i>
+            Segurança</a>
+            <a href="privacidade.html"><i class="material-icons">lock</i>
+            Privacidade </a>
+            <a href="Aboutus.html"><i class="material-icons">text_snippet</i>
+            Sobre Nós</a>
+            <a href="perguntas.html"><i class="material-icons">textsms</i>
+            Perguntas Frequentes</a>
+        </div>
+    </div>
+
+    <script src="js/player.js"></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script><script  src="./comment.js"></script>
+
+</body>
+</html>

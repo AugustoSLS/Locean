@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script src="js/slider.js"></script>
+    <script src="js/ham.js"></script>
+    <title>Locean.</title>
+</head>
+
+<body>
+    <header class="header">
+        <button class="header__button" id="btnNav" type="button">
+            <i class="material-icons">menu</i>
+        </button>
+
+        <div id="logo_loceantext">
+            <a href="index.html">
+            <img id="logo__locean--text" src="./Imagens/Teste123.jpg">
+            </a>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="nav__links">            
+            <a href="index.html" class="nav__link nav__link--active">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+            <a class="nav__link" href="cursos.html">
+                <i class="material-icons">article</i>
+                Cursos
+            </a>
+            <a class="nav__link" href="perfil.html">
+                <i class="material-icons">person</i>
+                Perfil
+            </a>
+            <a class="nav__link" href="login.html">
+                <i class="material-icons">login</i>
+                Login
+            </a>
+        </div>
+        <div class="nav__overlay"></div>
+    </nav>
+
+    <section class="sec__carousel">
+        <div class="carousel">
+        <button class="carousel__button carousel__button--left is-hidden">
+            <i class="material-icons">arrow_back_ios</i>
+        </button>
+
+        <div class="carousel__track-container">
+            <ul class="carousel__track">
+                <li class="carousel__slide current-slide">
+                    <img class="carousel__image" src="./Imagens/Teste.jpg" alt="">
+                 </li>
+                <li class="carousel__slide">
+                   <img class="carousel__image" src="./Imagens/Slide-1.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                   <img class="carousel__image" src="./Imagens/Slide-2.jpg" alt="">
+                </li>
+                <li class="carousel__slide">
+                   <img class="carousel__image" src="./Imagens/Slide-3.jpg" alt="">
+                </li>
+            </ul>
+        </div> 
+
+        <button class="carousel__button carousel__button--right">
+            <i class="material-icons">arrow_forward_ios</i>
+        </button>
+
+        <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+            <button class="carousel__indicator"></button>
+        </div>
+    </div>
+    </section>
+
+    <section class="sec__prop">
+        <img src="Imagens/Tprop.jpg" alt="">
+</section>
+
+    <section class="sec__prop">
+            <img src="Imagens/Tprop.jpg" alt="">
+    </section>
+
+
+    <div class="footer-container">
+        <div class="footer">
+            <a href="contato.html"><i class="material-icons">email</i>
+            Contato</a>
+            <a href="termos.html"><i class="material-icons">description</i>
+            Termos de Serviço</a>
+            <a href="segurança.html"><i class="material-icons">shield</i>
+            Segurança</a>
+            <a href="privacidade.html"><i class="material-icons">lock</i>
+            Privacidade </a>
+            <a href="Aboutus.html"><i class="material-icons">text_snippet</i>
+            Sobre Nós</a>
+            <a href="perguntas.html"><i class="material-icons">textsms</i>
+            Perguntas Frequentes</a>
+        </div>
+    </div>
+
+</body>
+
+<script src="js/carousel.js"></script>
+
+</html>
